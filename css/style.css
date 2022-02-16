@@ -1,3 +1,9 @@
+:root{
+  --normal-font: 18px;
+}
+ul{
+  padding-inline-start: 0px;
+}
 body {
   background-color: #fff;
   font-family: "Roboto", sans-serif;
@@ -32,7 +38,7 @@ body {
   margin: auto;
   margin-top: 30px;
   padding-bottom: 10px;
-  font-size: 18px;
+  font-size: var(--normal-font);
   border-bottom: 1px solid black;
 }
 #timeline {
@@ -41,7 +47,7 @@ body {
   display: block;
   border-radius: 20px;
   margin: auto;
-  font-size: 18px;
+  font-size: var(--normal-font);
 }
 #tribute-info {
   text-align: center;
@@ -66,10 +72,19 @@ body {
   text-align: center;
   margin-top: 20px;
   padding-bottom: 20px;
-  font-size: 18px;
+  font-size: var(--normal-font);
   font-weight: bold;
 }
 footer{
   text-align: center;
   margin: 30px;
+}
+@media only screen and (max-width: 900px) {
+  :root{
+    --normal-font: 14px;
+  }
+  #timeline-ul{
+    width: 75%;
+    margin: auto;
+  }
 }
