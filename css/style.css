@@ -87,4 +87,10 @@ footer{
     width: 75%;
     margin: auto;
   }
+  #title{
+    font-size: 32px;
+  }
+  #subheader{
+    font-size: 18px;
+  }
 }
